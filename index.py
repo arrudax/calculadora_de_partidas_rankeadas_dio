@@ -29,11 +29,11 @@ def get_rank(quantidadeVitorias: int, quantidadeDerrotas:int):
     elif saldoVitorias >= 101:
         nivel = "Imortal"
         
-    print(f"O Herói tem de saldo de {saldoVitorias} está no nível de {nivel}")
+    return f"O Herói tem de saldo de {saldoVitorias} está no nível de {nivel}"
  
             
 for heroi in lista_rank_herois:
-    get_rank(quantidadeVitorias=heroi['vitorias'], quantidadeDerrotas=heroi['derrotas'])
-
+    rank = get_rank(quantidadeVitorias=heroi['vitorias'], quantidadeDerrotas=heroi['derrotas'])
+    print(rank)
 
 
